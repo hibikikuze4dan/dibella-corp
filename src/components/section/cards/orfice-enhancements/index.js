@@ -15,7 +15,7 @@ const OrficeEnhancementCardComponent = ({ data }) => {
           <CostHandlerComponent cost={cost} />
         </Grid>
         <Grid item xs={12}>
-          <OrficeButtonsComponent />
+          <OrficeButtonsComponent data={data} />
         </Grid>
         <Grid item xs={12}>
           <Typography>{description}</Typography>

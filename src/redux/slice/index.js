@@ -1,12 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
 import cyoaData from "../../data";
 import { openSectionTitlesObject } from "../../data/utils";
-import { toggleOpenSectionAction } from "../actions";
+import { toggleOpenSectionAction, updateEnhancementsAction } from "../actions";
 
 const initialState = {
   saveTitle: "",
   cyoaData,
   mode: [],
+  vaginaEnhancements: [],
+  mouthEnhancements: [],
+  anusEnhancements: [],
+  nipplesEnhancements: [],
+  urethraEnhancements: [],
   openSections: openSectionTitlesObject,
 };
 
@@ -15,10 +20,11 @@ export const saveSlice = createSlice({
   initialState,
   reducers: {
     toggleOpenSection: toggleOpenSectionAction,
+    updateEnhancements: updateEnhancementsAction,
   },
 });
 
-export const { toggleOpenSection } = saveSlice.actions;
+export const { toggleOpenSection, updateEnhancements } = saveSlice.actions;
 
 export const selectCount = (state) => state.counter.value;
 
