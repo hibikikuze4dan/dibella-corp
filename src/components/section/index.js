@@ -1,4 +1,5 @@
 import { Button, Grid } from "@material-ui/core";
+import { snakeCase } from "lodash";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { isSectionOpenFuntion } from "../../redux/selectors";
@@ -21,7 +22,10 @@ const SectionComponent = ({ section }) => {
       {isSectionOpen && (
         <Grid item xs={12}>
           <OpeningComponent {...{ title, description }} />
-          <CardListComponent data={section?.choices ?? []} />
+          <CardListComponent
+            section={snakeCase(title)}
+            data={section?.choices ?? []}
+          />
         </Grid>
       )}
     </Grid>

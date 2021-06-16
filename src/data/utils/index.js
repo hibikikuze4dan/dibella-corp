@@ -1,3 +1,4 @@
+import { findLastIndex } from "lodash";
 import CYOADATA from "../index";
 
 export const sectionTitles = Object.values(CYOADATA).map(
@@ -19,4 +20,8 @@ export const ENHANCEMENT_TYPES = [
 
 export const choiceExistsFunc = (choicesArray, choice) => {
   return !!choicesArray.find(({ title }) => title === choice.title);
+};
+
+export const findLastChoiceIndex = (choicesArray, choice) => {
+  return findLastIndex(choicesArray, ({ title }) => title === choice.title);
 };

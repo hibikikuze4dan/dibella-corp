@@ -76,6 +76,7 @@ const customization = {
         "If you wish we can replace your gynoids vagina with a fully functional penis with balls or with internal balls, whatever you wish. Maybe you want your gynoid to have both a penis and a vagina? We could do that as well, but that would cost an additional 3 Customization points.",
       ],
       cost: 2,
+      costPerPurchase: [2, 3],
       cardType: "double",
     },
     {

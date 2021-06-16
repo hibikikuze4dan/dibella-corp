@@ -221,6 +221,7 @@ const assassination_assortment = {
         "By rewiring some internal circuits, we can give your gynoid the ability to generate a electrical current with her hands. The current is strong enough to disrupt nerve signals and cause neuromuscular incapacitation. For 5 additional Customization points, we can modify the attack to fire arcs of lightning, giving it a range of 2 meters.",
       ],
       cost: 5,
+      costPerPurchase: [5, 5],
       requirement: [],
       cardType: "double",
       droneOption: false,
